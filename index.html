@@ -62,10 +62,10 @@
 
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;">
-        <a-image src="assets/asset.jpeg" look-at="[gps-camera]" scale="1 1 1"
+        <a-image src="assets/asset.jpeg" look-at="[gps-new-camera]" scale="1 1 1"
             gps-entity-place="latitude: 6.7251022; longitude: 79.9345011;"></a-image>
 
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-new-camera='gpsMinDistance: 5' rotation-reader></a-camera>
     </a-scene>
 </body>
 
